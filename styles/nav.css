@@ -1,0 +1,52 @@
+nav {
+    display: grid;
+    gap: var(--spacing-s);
+    padding-left: var(--spacing-s);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "forum logo user" "forum breadcrumbs user";
+
+    &:has(.admin-nav) {
+        grid-template-columns: repeat(2,1fr) max-content 1fr;
+        grid-template-areas: "forum logo admin user" "forum logo breadcrumbs admin user";
+    }
+
+    .forum-nav {
+        grid-area: forum;
+		
+    }
+
+    .nav-logo {
+        grid-area: logo;
+    }
+
+    .breadcrumbs {
+        grid-area: breadcrumbs;
+
+        &:empty {
+            display: none;
+        }
+
+    }
+
+    .admin-nav {
+        grid-area: admin;
+    }
+
+    .user-nav {
+        grid-area: user;
+        justify-content: flex-end;
+    }
+
+    .guest-nav {
+        grid-area: user;
+        justify-content: flex-end;
+        padding-right: var(--spacing);
+      
+      button {
+        padding: var(--spacing-xs) var(--spacing);
+        font: var(--f-s) var(--f-buttons);
+        background: var(--accent);
+        color: contrast-color(var(--accent));
+      }
+    }
+}
