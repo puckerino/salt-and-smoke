@@ -1,0 +1,186 @@
+/* ==================================
+LINKS OPCIONES
+================================== */
+
+footer .forum-options {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s);
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* ==================================
+BLOQUE PRINCIPAL 
+================================== */
+
+footer {
+    
+    div[data-pixie-footer] {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        grid-template-areas:
+            "groups online forum-stats"
+            "groups online last-user";
+        gap: 0 var(--spacing);
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr;
+            grid-template-areas: "forum-stats" "online" "last-user" "groups";
+        }
+        
+        &:not(:has(.pixie-footer-online)) {
+            display: none;
+        }
+
+        .pixie-footer-stats {
+            grid-area: forum-stats;
+
+            @media (max-width: 700px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+
+        .pixie-footer-lastuser {
+            grid-area: last-user;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                font: var(--f-l) var(--f-title);
+            }
+
+            a {
+                font: var(--f-xl) var(--f-post-username);
+            }
+
+            @media (max-width: 700px) {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+        }
+
+        .pixie-footer-online {
+            grid-area: online;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: max-content 1fr;
+
+            .pixie-footer-online-summary {
+                grid-column: 1 / -1;
+            }
+
+            @media (max-width: 700px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pixie-footer-groups {
+            grid-area: groups;
+        }
+    }
+}
+
+/* ==================================
+GRUPOS
+================================== */
+
+footer .pixie-footer-groups {
+    .pixie-footer-group-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-s);
+
+        .pixie-footer-group {
+            background: var(--group-color);
+            padding: var(--spacing) var(--spacing-2xl);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: clip;
+
+            span, strong {
+                position: relative;
+            }
+
+            &[href*="/g2-"] {
+                --group: 2;
+            }
+            
+            &[href*="/g3-"] {
+                --group: 3;
+            }            
+            
+            &[href*="/g4-"] {
+                --group: 4;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                background: var(--text-contrast);
+                opacity: .3;
+                height: 90%;
+                width: 100%;
+                -webkit-mask-position-x: center;
+                -webkit-mask-position-y: center;
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                
+                @container style(--group: 2) {
+                    mask-image: var(--group-2-icon);
+                }                
+                
+                @container style(--group: 3) {
+                    mask-image: var(--group-3-icon);
+                }                
+                
+                @container style(--group: 4) {
+                    mask-image: var(--group-4-icon);
+                }
+            }
+
+
+                
+        }
+    }
+}
+
+/* ==================================
+FOOTER WIDGETS - AFILIADOS
+================================== */
+
+footer .afiliados {
+    
+    .afiliados-50 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        gap: var(--spacing-s);
+    }
+}
+
+/* ==================================
+LINKS FOROACTIVO 
+==================================== */
+
+#page-footer {
+  .rightside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface-contrast);
+    color: var(--text-contrast);
+    padding: var(--spacing-s);
+    gap: var(--spacing-s);
+    font: var(--f-s) var(--f-mono);
+    text-transform: uppercase;
+  }
+}
