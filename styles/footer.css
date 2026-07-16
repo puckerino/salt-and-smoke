@@ -1,3 +1,8 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
 /* ==================================
 LINKS OPCIONES
 ================================== */
@@ -20,6 +25,7 @@ BLOQUE PRINCIPAL
 footer {
     
     div[data-pixie-footer] {
+        grid-column: 1 / -1;
         display: grid;
         grid-template-columns: 1fr max-content;
         grid-template-areas:
