@@ -4,13 +4,24 @@ footer {
 }
 
 /* ==================================
+TITULO
+================================== */
+
+footer > h2 {
+    font: 100 var(--f-5xl) var(--f-title-deco);
+    color: var(--text-subtle);
+}
+
+/* ==================================
 LINKS OPCIONES
 ================================== */
 
 footer .forum-options {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: var(--spacing-s);
+    padding: var(--spacing);
 
     li {
         display: flex;
