@@ -11,8 +11,8 @@
 		"intro intro intro links links links"
 		"intro intro intro periodo periodo periodo"
 		"intro intro intro localizacion localizacion localizacion"
-		"eventos eventos anuncios anuncios topics topics"
-		"staff staff anuncios anuncios topics topics";
+		"eventos eventos anuncios anuncios staff staff"
+		"topics topics topics topics topics topics";
 	
 
 	.linksrapidos { 
@@ -76,20 +76,16 @@
 
 	.lasttopics { 
 		grid-area: topics;
-		background: var(--surface);
-		display: flex;
-		flex-direction: column;
+		display: grid;
 
 		.tablon-title {
 			font: var(--f-l) var(--f-title);
 		}
 		
 		.wrap {
-			display: flex;
-			flex-direction: column;
-			gap: var(--spacing-xs);
-			max-height: 200px;
-			overflow:auto;
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			gap: var(--spacing-s);
 		}	
 		
 		.lasttopic { 
