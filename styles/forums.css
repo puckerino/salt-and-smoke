@@ -91,6 +91,10 @@ SHARED
                 align-items: center;
                 border-bottom: 1px solid var(--border);
 
+                &:last-child:nth-child(odd) {
+                  grid-column: 1 / -1;
+                }
+
                 &:nth-child(odd) {
                     border-right: 1px solid var(--border);
                 }
