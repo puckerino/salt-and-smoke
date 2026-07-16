@@ -3,7 +3,11 @@ SHARED
 ========================================= */
 
 .category {
-  font-family: var(--f-category-title);
+  hgroup {
+    h2 {
+      font-family: var(--f-category-title);
+    }
+  }
 }
 
 .forum {
