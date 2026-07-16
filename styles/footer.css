@@ -100,6 +100,12 @@ footer {
                 padding: var(--spacing-s);
             }
 
+            .pixie-footer-users {
+                h4 {
+                    font: var(--f-xl) var(--f-title);
+                }
+            }
+
             @media (max-width: 700px) {
                 grid-template-columns: 1fr;
             }
