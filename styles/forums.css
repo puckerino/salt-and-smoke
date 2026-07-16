@@ -2,8 +2,16 @@
 SHARED
 ========================================= */
 
+.category {
+  font-family: var(--f-category-title);
+}
+
 .forum {
   border: 1px solid var(--border);
+
+  .title {
+    font-family: var(--f-forum-title);
+  }
   
   .description {
   }
