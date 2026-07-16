@@ -9,7 +9,7 @@ nav {
 		grid-template-areas: "forum logo user" "forum breadcrumbs user";
 	}
 
-    &:has(.admin-nav) {
+    &:has(.admin-nav):has(.breadcrumbs:empty) {
         grid-template-columns: repeat(2,1fr) max-content 1fr;
         grid-template-areas: "forum logo admin user";
     }
