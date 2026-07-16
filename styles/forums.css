@@ -186,7 +186,7 @@ SHARED
 @container style(--category:guidebook) {
 
     .category {
-        --img-width: 20vw;
+        --img-width: 25vw;
         gap: 0 var(--spacing);
         display: grid;
         grid-template-columns: var(--img-width) 1fr;
