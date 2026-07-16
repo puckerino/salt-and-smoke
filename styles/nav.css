@@ -1,6 +1,6 @@
 nav {
     display: grid;
-    gap: var(--spacing-s);
+    gap: 0 var(--spacing-s);
     padding-left: var(--spacing-s);
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: "forum logo user";
@@ -25,6 +25,7 @@ nav {
 
     .breadcrumbs {
         grid-area: breadcrumbs;
+		justify-content: center;
 
         &:empty {
             display: none;
