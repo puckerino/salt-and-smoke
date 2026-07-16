@@ -17,6 +17,10 @@ nav {
 
     .nav-logo {
         grid-area: logo;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 1;
     }
 
     .breadcrumbs {
