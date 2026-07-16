@@ -6,17 +6,8 @@ nav {
     grid-template-areas: "forum logo user";
 
 	&:has(.breadcrumbs:not(:empty)) {
+		grid-template-rows: repeat(2,max-content);
 		grid-template-areas: "forum logo user" "forum breadcrumbs user";
-	}
-
-    &:has(.admin-nav):has(.breadcrumbs:empty) {
-        grid-template-columns: repeat(2,1fr) max-content 1fr;
-        grid-template-areas: "forum logo admin user";
-    }
-
-	&:has(.breadcrumbs:not(:empty)):has(.admin-nav) {
-		grid-template-columns: repeat(2,1fr) max-content 1fr;
-        grid-template-areas: "forum logo admin user" "forum breadcrumbs admin user";
 	}
 
     .forum-nav {
@@ -35,10 +26,6 @@ nav {
             display: none;
         }
 
-    }
-
-    .admin-nav {
-        grid-area: admin;
     }
 
     .user-nav {
