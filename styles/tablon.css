@@ -37,18 +37,14 @@
 		display: flex;
 		flex-direction:column;
 		background: var(--surface);
-		padding-bottom: var(--spacing);
 		
 		.tablon-title {
-			padding: var(--spacing);
 			font: var(--f-l) var(--f-title);
-			background: color-mix(in srgb, var(--accent), transparent);
 		}
 		
 		.wrap {
 			display: flex;
 			flex-direction: column;
-			padding: var(--spacing);
 			gap: var(--spacing-xs);
 			max-height: 200px;
 			overflow:auto;
@@ -83,18 +79,14 @@
 		background: var(--surface);
 		display: flex;
 		flex-direction: column;
-		padding-bottom: var(--spacing);
 
 		.tablon-title {
-			padding: var(--spacing);
 			font: var(--f-l) var(--f-title);
-			background: color-mix(in srgb, var(--accent), transparent);
 		}
 		
 		.wrap {
 			display: flex;
 			flex-direction: column;
-			padding: var(--spacing);
 			gap: var(--spacing-xs);
 			max-height: 200px;
 			overflow:auto;
