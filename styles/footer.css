@@ -12,6 +12,7 @@ footer > h2 {
     color: var(--text-subtle); 
     line-height: 1;
     padding: var(--spacing);
+    text-transform: uppercase;
 }
 
 /* ==================================
@@ -95,6 +96,8 @@ footer {
 
             .pixie-footer-online-summary {
                 grid-column: 1 / -1;
+                background: var(--background);
+                padding: var(--spacing-s);
             }
 
             @media (max-width: 700px) {
@@ -115,7 +118,6 @@ GRUPOS
 footer .pixie-footer-groups {
     .pixie-footer-group-list {
         display: flex;
-        flex-direction: column;
         gap: var(--spacing-s);
 
         .pixie-footer-group {
