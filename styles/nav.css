@@ -3,12 +3,21 @@ nav {
     gap: var(--spacing-s);
     padding-left: var(--spacing-s);
     grid-template-columns: repeat(3,1fr);
-    grid-template-areas: "forum logo user" "forum breadcrumbs user";
+    grid-template-areas: "forum logo user";
+
+	&:has(.breadcrumbs:not(:empty)) {
+		grid-template-areas: "forum logo user" "forum breadcrumbs user";
+	}
 
     &:has(.admin-nav) {
         grid-template-columns: repeat(2,1fr) max-content 1fr;
-        grid-template-areas: "forum logo admin user" "forum logo breadcrumbs admin user";
+        grid-template-areas: "forum logo admin user";
     }
+
+	&:has(.breadcrumbs:not(:empty)):has(.admin-nav) {
+		grid-template-columns: repeat(2,1fr) max-content 1fr;
+        grid-template-areas: "forum logo admin user" "forum breadcrumbs admin user";
+	}
 
     .forum-nav {
         grid-area: forum;
