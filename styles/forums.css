@@ -12,6 +12,10 @@ SHARED
   .title {
     font-family: var(--f-forum-title);
   }
+
+  .links {
+    font-family: var(--f-forum-links);
+  }
   
   .description {
   }
