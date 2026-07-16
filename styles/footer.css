@@ -9,7 +9,9 @@ TITULO
 
 footer > h2 {
     font: 100 var(--f-5xl) var(--f-title-deco);
-    color: var(--text-subtle);
+    color: var(--text-subtle); 
+    line-height: 1;
+    padding: var(--spacing);
 }
 
 /* ==================================
