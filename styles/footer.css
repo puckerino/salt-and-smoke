@@ -116,6 +116,17 @@ footer {
                 grid-column: 1 / -1;
                 background: var(--background);
                 padding: var(--spacing-s);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                span {
+                    font: var(--f-s) var(--f-metadata);
+
+                    strong {
+                        font: italic var(--f-l) var(--f-title);
+                    }
+                }
             }
 
             .pixie-footer-users {
