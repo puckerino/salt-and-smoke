@@ -41,7 +41,7 @@ footer {
     div[data-pixie-footer] {
         grid-column: 1 / -1;
         display: grid;
-        grid-template-columns: max-content 1fr max-content;
+        grid-template-columns: .5fr 1fr .5fr;
         grid-template-areas:
             "forum-stats online last-user"
             "groups groups groups";
@@ -77,7 +77,7 @@ footer {
                 }
 
                 span {
-                    font: 100 var(--f-s) var(--f-metadata);
+                    font: 500 var(--f-s) var(--f-metadata);
                     letter-spacing: .1ch;
                     text-transform: uppercase;
                 }
@@ -124,7 +124,7 @@ footer {
                     text-transform: uppercase;
 
                     strong {
-                        font: italic var(--f-l) var(--f-title);
+                        font: italic var(--f-xl) var(--f-title);
                     }
                 }
             }
