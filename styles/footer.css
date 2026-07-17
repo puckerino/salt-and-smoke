@@ -18,6 +18,19 @@ footer {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 80%;
+            top: 0;
+            border-radius: 0 0 999px 999px;
+            background: linear-gradient(to bottom, var(--accent-darker), var(--accent-dark), var(--accent), var(--accent-light));
+        }
     }
 
     .forum-options {
@@ -42,6 +55,7 @@ footer {
             text-fit: grow;
             display: block;
             color: var(--text-subtle);
+            line-height: 1;
         }
     }
 
