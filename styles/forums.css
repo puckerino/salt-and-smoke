@@ -39,7 +39,7 @@ SHARED
         corner-shape: var(--shape-deco);
         border: 1px solid var(--border);
         outline: 1px solid var(--border);
-        outline-offset: var(--spacing-s);
+        outline-offset: var(--spacing-xs);
       }
     }
 }
