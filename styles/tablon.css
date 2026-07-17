@@ -8,7 +8,7 @@
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(5, max-content);
 	grid-template-areas: 
-		"intro intro intro links links links"
+		"links links links links links links"
 		"intro intro intro periodo periodo periodo"
 		"intro intro intro localizacion localizacion localizacion"
 		"eventos eventos anuncios anuncios staff staff"
@@ -26,9 +26,7 @@
 			align-items: center;
 			background: var(--surface);
 			padding: var(--spacing-xs) var(--spacing-s);
-			border-radius: .25rem;
-			corner-shape: squircle;
-			font: var(--f-s) var(--f-text);
+			font: var(--f-base) var(--f-label);
 		}
 	}
 
