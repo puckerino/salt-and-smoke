@@ -14,6 +14,7 @@ footer {
 
     .footer-img {
         grid-area: img;
+        position: relative;
         background: var(--footer-img);
         background-repeat: no-repeat;
         background-size: contain;
@@ -21,16 +22,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &:before {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 80%;
-            top: 0;
-            border-radius: 0 0 999px 999px;
-            background: linear-gradient(to bottom, var(--accent-darker), var(--accent-dark), var(--accent), var(--accent-light));
-        }
     }
 
     .forum-options {
