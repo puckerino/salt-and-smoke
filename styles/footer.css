@@ -121,7 +121,8 @@ footer {
                 align-items: center;
 
                 span {
-                    font: var(--f-s) var(--f-metadata);
+                    font: 500 var(--f-s) var(--f-metadata);
+                    text-transform: uppercase;
 
                     strong {
                         font: italic var(--f-l) var(--f-title);
