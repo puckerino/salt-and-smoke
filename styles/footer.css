@@ -15,7 +15,7 @@ footer {
     .footer-img {
         grid-area: img;
         position: relative;
-        background: var(--footer-img);
+        background: var(--footer-img), radial-gradient(circle,var(--accent) 0%, transparent 90%)
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom center;
