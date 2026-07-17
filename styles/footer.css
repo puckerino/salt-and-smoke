@@ -78,7 +78,8 @@ footer {
                 }
 
                 span {
-                    font: 100 var(--f-s) var(--f-text);
+                    font: 100 var(--f-s) var(--f-metadata);
+                    letter-spacing: .1ch;
                     text-transform: uppercase;
                 }
             }
