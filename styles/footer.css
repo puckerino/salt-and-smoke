@@ -197,11 +197,11 @@ footer {
                 }
 
                 .pixie-footer-user-list {
-                    height: 40vh;
+                    height: 30vh;
                     overflow: auto;
 
                     a {
-                        font: var(--f-base) var(--f-title);
+                        font: var(--f-l) var(--f-title);
                     }
                 }
             }
