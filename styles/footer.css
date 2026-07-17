@@ -220,6 +220,14 @@ FOOTER WIDGETS - AFILIADOS
 ================================== */
 
 footer .afiliados {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    paddding: var(--spacing);
+    gap: var(--spacing);
+
+    h2.footer-title {
+        grid-column: 1 / -1;
+    }
     
     #afiliadosnormales {
         display: grid;
@@ -235,7 +243,7 @@ footer .afiliados {
 
     #afiliadoshermanos {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(2,1fr);
         gap: var(--spacing-s);
 
         figure img {
