@@ -1,10 +1,49 @@
 footer {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+        "title title title options options options"
+        "online online online online online online"
+        "disclaimer disclaimer img img creditos creditos"
+        "afiliados afiliados afiliados afiliados afiliados afiliados"
+        ;
 
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
     }
+
+    .footer-img {
+        grid-area: img;
+        background: var(--footer-img);
+        background-size: contain;
+        background-position: bottom center;
+    }
+
+    .forum-options {
+        grid-area: options;
+    }
+
+    & > h2 {
+        grid-area: title;
+    }
+
+    div[data-pixie-footer] {
+        grid-area: online;
+    }
+
+    .disclaimer {
+        grid-area: disclaimer;
+    }
+
+    .afiliados {
+        grid-area: afiliados;
+    }
+
+    .forum-credits {
+        grid-area: creditos;
+    }
+
+    
 }
 
 /* ==================================
@@ -44,7 +83,6 @@ BLOQUE PRINCIPAL
 footer {
     
     div[data-pixie-footer] {
-        grid-column: 1 / -1;
         display: grid;
         grid-template-columns: .25fr 1fr .35fr;
         grid-template-areas:
@@ -253,7 +291,6 @@ FOOTER WIDGETS - AFILIADOS
 ================================== */
 
 footer .afiliados {
-    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: max-content 1fr;
     padding: var(--spacing);
