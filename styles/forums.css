@@ -32,6 +32,8 @@ SHARED
     grid-template-areas: "img" "title" "data" "desc" "links" "lastpost";
 
     .forum-img {
+      place-self: center;
+      padding: var(--spacing);
       img {
         height: 60px;
         width: 60px;
@@ -41,6 +43,30 @@ SHARED
         outline: 1px solid var(--border);
         outline-offset: var(--spacing-xs);
       }
+    }
+
+    .title {
+      place-self: center;
+      text-align: center;
+      padding: 0 var(--spacing);
+    }
+
+    .data {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:before, &:after {
+        content: "";
+        height: 1px;
+        min-width: 20px;
+        flex-grow: 1;
+        background: var(--border);
+      }
+    }
+
+    .description {
+      padding: var(--spacing);
     }
   }
 }
