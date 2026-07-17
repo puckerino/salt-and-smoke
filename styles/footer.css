@@ -186,6 +186,7 @@ footer .pixie-footer-groups {
             justify-content: center;
             align-items: center;
             overflow: clip;
+            color: contrast-color(var(--group-color));
 
             span, strong {
                 position: relative;
