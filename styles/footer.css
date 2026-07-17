@@ -306,13 +306,24 @@ FOOTER WIDGETS - AFILIADOS
 
 footer .afiliados {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: .5fr max-content 1fr;
     gap: var(--spacing);
     padding: var(--spacing);
     background: light-dark(var(--surface-3), var(--background));
+    grid-template-areas: 
+        "title title title"
+        "img hermanos normales";
+
+    &:before {
+        grid-area: img;
+        content: "";
+        background: var(--afiliados-img);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
     h2.footer-title {
-        grid-column: 1 / -1;
+        grid-area: title;
         font: 100 var(--f-4xl) var(--f-title-deco);
         text-align: right;
         display: flex;
@@ -330,6 +341,7 @@ footer .afiliados {
     }
     
     #afiliadosnormales {
+        grid-area: hermanos;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
         gap: var(--spacing-s);
@@ -342,6 +354,7 @@ footer .afiliados {
     }
 
     #afiliadoshermanos {
+        grid-area: normales;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: var(--spacing-s);
