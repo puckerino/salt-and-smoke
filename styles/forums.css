@@ -27,7 +27,7 @@ SHARED
 
 @container style(--forum-style:mini) {
   .forum {
-    --forum-rows: 7;
+    --forum-rows: 6;
     grid-template-columns: 1fr;
     grid-template-areas: "img" "title" "data" "desc" "links" "lastpost";
 
@@ -45,7 +45,7 @@ SHARED
       }
     }
 
-    .title {
+    & > .title {
       place-self: center;
       text-align: center;
       padding: 0 var(--spacing);
