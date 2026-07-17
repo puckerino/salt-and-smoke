@@ -155,9 +155,28 @@ GRUPOS
 ================================== */
 
 footer .pixie-footer-groups {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-areas: "title grouplist";
+
+    &:before {
+        content: "GRUPOS";
+        grid-area: title;
+        font: 100 var(--f-xl) var(--f-title-deco);
+        color: var(--text-subtle);
+        height: 100%;
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding: var(--spacing);
+    }
+    
     .pixie-footer-group-list {
+        grid-area: grouplist;
         display: flex;
         gap: var(--spacing-s);
+        padding: var(--spacing);
 
         .pixie-footer-group {
             background: var(--group-color);
@@ -220,6 +239,7 @@ FOOTER WIDGETS - AFILIADOS
 ================================== */
 
 footer .afiliados {
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: max-content 1fr;
     padding: var(--spacing);
