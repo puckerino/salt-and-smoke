@@ -1,6 +1,10 @@
 footer {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ==================================
@@ -45,7 +49,6 @@ footer {
         grid-template-areas:
             "forum-stats online last-user"
             "groups groups groups";
-        gap: 0 var(--spacing);
 
         @media (max-width: 700px) {
             grid-template-columns: 1fr;
@@ -58,6 +61,7 @@ footer {
 
         .pixie-footer-stats {
             grid-area: forum-stats;
+            background: var(--surface-3);
 
             @media (max-width: 700px) {
                 display: flex;
