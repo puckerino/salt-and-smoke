@@ -115,8 +115,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: max-content 1fr;
-            gap: var(--spacing);
-
+            
             .pixie-footer-online-summary {
                 grid-column: 1 / -1;
                 background: var(--background);
@@ -136,10 +135,8 @@ footer {
             }
 
             .pixie-footer-users {
-
-                &:first-of-type {
-                    padding-left: var(--spacing);
-                }
+                padding: var(--spacing);
+                padding-right: 0;
                 
                 h4 {
                     font: italic var(--f-2xl) var(--f-title);
