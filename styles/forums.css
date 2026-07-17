@@ -129,6 +129,10 @@ SHARED
         --forum-rows: 5;
         --img-width: 20vw;
 
+      @media(min-width: 1800px) {
+        --img-width: 15vw;
+      }
+
         &:has(.forum-img:empty) {
         --img-width:0;
         }
@@ -222,6 +226,11 @@ SHARED
 
     .category {
         --img-width: 25vw;
+
+      @media(min-width: 1800px) {
+        --img-width: 15vw;
+      }
+      
         gap: 0 var(--spacing);
         display: grid;
         grid-template-columns: var(--img-width) 1fr;
