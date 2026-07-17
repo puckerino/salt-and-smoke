@@ -341,7 +341,7 @@ footer .afiliados {
     }
     
     #afiliadosnormales {
-        grid-area: hermanos;
+        grid-area: normales;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
         gap: var(--spacing-s);
@@ -354,7 +354,7 @@ footer .afiliados {
     }
 
     #afiliadoshermanos {
-        grid-area: normales;
+        grid-area: hermanos;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: var(--spacing-s);
