@@ -74,10 +74,11 @@ footer {
                 text-align:center;
 
                 strong {
-                    font: italic var(--f-l) var(--f-title);
+                    font: italic var(--f-xl) var(--f-title);
                 }
 
                 span {
+                    font: 100 var(--f-s) var(--f-text);
                     text-transform: uppercase;
                 }
             }
