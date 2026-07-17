@@ -15,6 +15,7 @@ footer {
     .footer-img {
         grid-area: img;
         background: var(--footer-img);
+        background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom center;
     }
