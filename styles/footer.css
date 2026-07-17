@@ -115,6 +115,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: max-content 1fr;
+            gap: var(--spacing);
 
             .pixie-footer-online-summary {
                 grid-column: 1 / -1;
@@ -135,8 +136,13 @@ footer {
             }
 
             .pixie-footer-users {
+
+                &:first-of-type {
+                    padding-left: var(--spacing);
+                }
+                
                 h4 {
-                    font: var(--f-xl) var(--f-title);
+                    font: italic var(--f-2xl) var(--f-title);
                 }
 
                 .pixie-footer-user-list {
