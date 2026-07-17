@@ -59,7 +59,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
     
 }
 
@@ -297,9 +296,6 @@ footer .pixie-footer-groups {
                     mask-image: var(--group-4-icon);
                 }
             }
-
-
-                
         }
     }
 }
@@ -317,15 +313,17 @@ footer .afiliados {
 
     h2.footer-title {
         grid-column: 1 / -1;
-        font: 100 var(--f-2xl) var(--f-title-deco);
+        font: 100 var(--f-4xl) var(--f-title-deco);
         text-align: right;
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        gap: var(--spacing);
+        justify-content: flex-end;
+        align-items: center;
 
         &:before {
             content: "";
             min-width: 20px;
+            height: 1px;
             flex-grow: 1;
             background: var(--border);
         }
