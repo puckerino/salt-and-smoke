@@ -221,11 +221,30 @@ FOOTER WIDGETS - AFILIADOS
 
 footer .afiliados {
     
-    .afiliados-50 {
+    #afiliadosnormales {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
         gap: var(--spacing-s);
+
+        figure img {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+        }
     }
+
+    #afiliadoshermanos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: var(--spacing-s);
+
+        figure img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+    }
+        
 }
 
 /* ==================================
