@@ -25,6 +25,25 @@ SHARED
   }
 }
 
+@container style(--forum-style:mini) {
+  .forum {
+    --forum-rows: 7;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "title" "data" "desc" "links" "lastpost";
+
+    .forum-img {
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: var(--spacing-s);
+        corner-shape: var(--shape-deco);
+        border: 1px solid var(--border);
+        outline: 1px solid var(--border);
+        outline-offset: var(--spacing-s);
+      }
+    }
+}
+
 @container style(--forum-style:small) {
 
     .forum {
