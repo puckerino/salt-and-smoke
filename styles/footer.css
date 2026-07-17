@@ -34,6 +34,14 @@ footer {
 
     .disclaimer {
         grid-area: disclaimer;
+
+        &:before {
+            content: var(--titulo-foro);
+            font: 100 var(--f-l) var(--f-title-deco);
+            text-fit: grow;
+            display: block;
+            color: var(--text-subtle);
+        }
     }
 
     .afiliados {
@@ -42,6 +50,8 @@ footer {
 
     .forum-credits {
         grid-area: creditos;
+        display: flex;
+        flex-direction: column;
     }
 
     
