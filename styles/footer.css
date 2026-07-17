@@ -226,6 +226,7 @@ footer .pixie-footer-groups {
     display: grid;
     grid-template-columns: .25fr 1fr .35fr;
     grid-template-areas: "title grouplist grouplist";
+    background: var(--background);
 
     &:before {
         content: "GRUPOS";
