@@ -311,12 +311,24 @@ FOOTER WIDGETS - AFILIADOS
 footer .afiliados {
     display: grid;
     grid-template-columns: max-content 1fr;
-    padding: var(--spacing);
     gap: var(--spacing);
+    padding: var(--spacing);
+    background: light-dark(var(--surface-3), var(--background));
 
     h2.footer-title {
         grid-column: 1 / -1;
-        font: 100 var(--f-l) var(--f-title-deco);
+        font: 100 var(--f-2xl) var(--f-title-deco);
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        &:before {
+            content: "";
+            min-width: 20px;
+            flex-grow: 1;
+            background: var(--border);
+        }
     }
     
     #afiliadosnormales {
