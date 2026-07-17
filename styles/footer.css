@@ -222,11 +222,12 @@ FOOTER WIDGETS - AFILIADOS
 footer .afiliados {
     display: grid;
     grid-template-columns: max-content 1fr;
-    paddding: var(--spacing);
+    padding: var(--spacing);
     gap: var(--spacing);
 
     h2.footer-title {
         grid-column: 1 / -1;
+        font: 100 var(--f-l) var(--f-title-deco);
     }
     
     #afiliadosnormales {
